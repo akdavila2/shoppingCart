@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react'
+import Layout from './components/Layout';
 
+
+// import Cart from './components/Cart';
+// import NavBar from './components/NavBar';
+// import ProductDisplay from './components/ProductDisplay';
 const App = () => {
   // -------------------------------------------------
   // DO NOT USE THE CODE BELOW FROM LINES 8 TO 18. THIS IS
   // HERE TO MAKE SURE THAT THE EXPRESS SERVER IS RUNNING
   // CORRECTLY. DELETE CODE WHEN COMPLETING YOUR TEST.
   const [response, setResponse] = useState('')
+  console.log("response", response)
 
   // call server to see if its running
   useEffect(() => {
@@ -18,14 +24,18 @@ const App = () => {
   }, [])
   // -------------------------------------------------
 
+
+
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1> Prueba tecnica front Ecomsur 2021</h1>
-      <p>Borra esto y comienza aqui.</p>
-      {/* Check to see if express server is running correctly */}
-      <h5>{response}</h5>
-    </div>
+    <>
+      <Layout />
+
+    </>
   )
 }
 
 export default App
+
+
+// <ProductDisplay />
+// <Cart onRemoveCart={onRemoveCart} addCart={addCart} cartItems={cartItems} />
