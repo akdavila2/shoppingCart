@@ -2,7 +2,7 @@
 
   - [Instalar y Correr la aplicación](#instalar-y-correr-la-aplicación)
   - [Descripción de la prueba](#descripción-de-la-prueba)
-  - [Resolución de prueba](#resolucion-de-prueba)
+  - [Resolución de la prueba](#resolucion-de-prueba)
 
 
 ## Instalar y Correr la aplicación
