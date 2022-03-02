@@ -63,9 +63,9 @@ Instale solo axios para su utilización.
 
 ## Vistas de la aplicación
 1. Mobile
-<img src="https://user-images.githubusercontent.com/7150868/156296577-bb326a40-990c-446e-a242-f56f179ffc26.png" alt="mobile vista" width="300px" height="700px">
-<img src="https://user-images.githubusercontent.com/7150868/156296572-60829ed8-a2fb-414d-bc99-05a02dcbd574.png" alt="mobile vista" width="300px" height="700px">
-<img src="https://user-images.githubusercontent.com/7150868/156296576-bc249ce0-8644-4bd7-85db-a6abfffe1a12.png" alt="mobile vista" width="300px" height="700px">
+<img src="https://user-images.githubusercontent.com/7150868/156296577-bb326a40-990c-446e-a242-f56f179ffc26.png" alt="mobile vista" width="280px" height="500px">
+<img src="https://user-images.githubusercontent.com/7150868/156296572-60829ed8-a2fb-414d-bc99-05a02dcbd574.png" alt="mobile vista" width="280px" height="500px">
+<img src="https://user-images.githubusercontent.com/7150868/156296576-bc249ce0-8644-4bd7-85db-a6abfffe1a12.png" alt="mobile vista" width="280px" height="500px">
 
 2. Desk
 <img src="https://user-images.githubusercontent.com/7150868/156296742-de579687-3ed0-4075-9e56-4289906f35b4.png" alt="mobile vista" width="700px" height="400px">
