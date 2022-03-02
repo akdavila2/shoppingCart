@@ -61,6 +61,16 @@ Instale solo axios para su utilización.
 1. Al inicio de la prueba quise implementar sass para hacer mis estilos pero me generaba error con weppack e intente solucionarlo pero no lo logre rapido y decidi quitarlo y solo usar css puro.
 2. Como vi dos packaje.json y package-lock.json uno dentro front y otro fuera crei habia tratado de instalar una dependencia donde no era y los borre y no pude levantar mas la app, por mas que corri de nuevo npm install. Tuve que clonar de nuevo el proyecto
 
+## Vistas de la aplicación
+1. Mobile
+<img src="https://user-images.githubusercontent.com/7150868/156296577-bb326a40-990c-446e-a242-f56f179ffc26.png" alt="mobile vista" width="300px" height="700px">
+<img src="https://user-images.githubusercontent.com/7150868/156296572-60829ed8-a2fb-414d-bc99-05a02dcbd574.png" alt="mobile vista" width="300px" height="700px">
+<img src="https://user-images.githubusercontent.com/7150868/156296576-bc249ce0-8644-4bd7-85db-a6abfffe1a12.png" alt="mobile vista" width="300px" height="700px">
+
+2. Desk
+<img src="https://user-images.githubusercontent.com/7150868/156296742-de579687-3ed0-4075-9e56-4289906f35b4.png" alt="mobile vista" width="700px" height="400px">
+<img src="https://user-images.githubusercontent.com/7150868/156296746-de85e781-b706-4598-9c5e-b3e8f977d1fe.png" alt="mobile vista" width="700px" height="400px">
+<img src="https://user-images.githubusercontent.com/7150868/156296739-9dd6b70c-2000-4c90-b980-5631a1eeb8f8.png" alt="mobile vista" width="700px" height="400px">
 
 
 
