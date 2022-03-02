@@ -1,11 +1,10 @@
 import React from "react";
-import iconAdd from "../../assets/iconagregar.png";
 import iconDelete from "../../assets/icondelete.png";
 import { usePageContext } from "../Layout";
 import "./Cart.css";
 
 function Cart() {
-  const { cartItems, addArt, removeArt } = usePageContext();
+  const { cartItems, removeArt } = usePageContext();
 
   const totalPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
 
@@ -24,7 +23,7 @@ function Cart() {
                 alt="product"
               />
               <div className="cart-price">
-                <p> {`${item.qty} x ${item.price}`}</p>
+                <p> {` $ ${item.price}`}</p>
               </div>
             </picture>
             <section className="cart-info">
@@ -32,11 +31,6 @@ function Cart() {
             </section>
 
             <section className="cart-actions">
-              <img
-                src={iconAdd}
-                alt="icono agregar"
-                onClick={() => addArt(item)}
-              />
               <img
                 src={iconDelete}
                 alt="icono eliminar"

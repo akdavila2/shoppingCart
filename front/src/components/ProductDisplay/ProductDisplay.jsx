@@ -31,7 +31,7 @@ function ProductDisplay() {
           <p>{`Rating: ${product.rating}`}</p>
           <p>{`In Stock: ${product.countInStock}`}</p>
           <p>{`$ ${product.price}`}</p>
-          <button className="primary-button add-to-cart-button" onClick={addArt}>
+          <button className="primary-button add-to-cart-button" onClick={()=>addArt(product)}>
             <img src={iconCart} alt="add to cart" /> Add to cart
           </button>
         </div>

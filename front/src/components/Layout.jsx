@@ -22,28 +22,29 @@ const Layout = () => {
   };
   const addArt = (product) => {
     const exist = cartItems.find((x) => x._id === product._id);
-    if (exist) {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === product._id ? { ...exist, qty: exist.qty + 1 } : x
-        )
-      );
-    } else {
+    if (!exist) {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
+      return;
     }
+    setCartItems(
+      cartItems.map((x) =>
+        x._id === product._id ? { ...exist, qty: exist.qty + 1 } : x
+      )
+    );
   };
 
   const removeArt = (product) => {
     const exist = cartItems.find((x) => x._id === product._id);
     if (exist.qty === 1) {
       setCartItems(cartItems.filter((x) => x._id !== product._id));
-    } else {
+      return;
+    } 
       setCartItems(
         cartItems.map((x) =>
           x._id === product._id ? { ...exist, qty: exist.qty - 1 } : x
         )
       );
-    }
+   
   };
 
   //const Control = selected ? Products : ProductDisplay;

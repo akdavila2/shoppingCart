@@ -12,7 +12,6 @@ const useData = () => {
         .get(apiUrl)
         .then((response) => {
           const allResponse = response.data;
-          console.log("allResponse", allResponse);
           setProducts(allResponse);
           setFetching(false);
         })
@@ -26,3 +25,4 @@ const useData = () => {
   return [products, fetching];
 };
 export default useData;
+

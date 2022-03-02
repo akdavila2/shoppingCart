@@ -17,9 +17,9 @@ const Product = ({ item }) => {
   };
 
   return (
-    <article className="cards-content" onClick={onClick}>
+    <article className="cards-content" >
       <div className="product-card">
-        <img src={`http://localhost:5000${item.image}`} alt={item.name} />
+        <img src={`http://localhost:5000${item.image}`} alt={item.name} onClick={onClick}/>
 
         <div className="product-info">
           <div>
@@ -29,6 +29,7 @@ const Product = ({ item }) => {
           </div>
           <div className="pie-card">
             <button className="btn" onClick={()=>addArt(item)}>
+             
               <img src={iconCart} alt="add to cart" />
               Add item to cart
             </button>
