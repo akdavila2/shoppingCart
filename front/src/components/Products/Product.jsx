@@ -5,7 +5,7 @@ import { usePageContext } from "../Layout";
 import "../Products/ProductList.css";
 
 const Product = ({ item }) => {
-  const { setSelected, setView } = usePageContext();
+  const { setSelected, setView, addArt } = usePageContext();
 
   const onClick = () => {
     console.log("entrando a imagen ", item);
@@ -28,7 +28,7 @@ const Product = ({ item }) => {
             <p>{item.description.slice(0, 150)}...</p>
           </div>
           <div className="pie-card">
-            <button className="btn">
+            <button className="btn" onClick={()=>addArt(item)}>
               <img src={iconCart} alt="add to cart" />
               Add item to cart
             </button>

@@ -7,7 +7,7 @@ import { usePageContext } from '../Layout';
 const NavBar= () =>{
 
 
-  const { setView } = usePageContext();
+  const { setView, cartItems } = usePageContext();
   const onClick = () => {
     setView("cart");
   };
@@ -30,7 +30,7 @@ const NavBar= () =>{
           <li className="navbar-email">Hello Ecomsur</li>
           <li className="navbar-shopping-cart">
             <img src={cart} alt="icon cart" onClick={onClick} />
-            <div>2</div>
+            <div>{cartItems.length}</div>
           </li>
         </ul>
       </div>

@@ -4,7 +4,7 @@ import { usePageContext } from "../Layout";
 import "./ProductDisplay.css";
 
 function ProductDisplay() {
-  const { setView, selected, products } = usePageContext();
+  const { setView, selected, products, addArt } = usePageContext();
   console.log("selected", selected, "product", products);
 
   const product = products.find((item) => item._id === selected);
@@ -31,7 +31,7 @@ function ProductDisplay() {
           <p>{`Rating: ${product.rating}`}</p>
           <p>{`In Stock: ${product.countInStock}`}</p>
           <p>{`$ ${product.price}`}</p>
-          <button className="primary-button add-to-cart-button">
+          <button className="primary-button add-to-cart-button" onClick={addArt}>
             <img src={iconCart} alt="add to cart" /> Add to cart
           </button>
         </div>
